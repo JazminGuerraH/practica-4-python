@@ -1,0 +1,35 @@
+import cmath
+
+
+from cmath import sqrt
+
+#ejercicio 1 
+print("ejercicio 1")
+
+def multiplicacion (a,b):
+    return a * b 
+def raiz (a):
+    return sqrt(a**2)
+def cubo (a):
+    return (a**3)
+def division (a,b):
+    return a / b
+
+
+while True:
+    menu = input('''.::BIENVENIDO::.
+                1.Multiplicacion de dos numeros.
+                2.Raíz cuadrada de un numero.
+                3.Cubo de un numero. 
+                4.Division de dos numeros.
+                5.Salir
+''')
+if menu < 1 and menu > 5:
+    print("es una opcion no validad, digite otro numero")
+    menu = input('''.::BIENVENIDO::.
+                1.Multiplicacion de dos numeros.
+                2.Raíz cuadrada de un numero.
+                3.Cubo de un numero. 
+                4.Division de dos numeros.
+                5.Salir
+''')  
