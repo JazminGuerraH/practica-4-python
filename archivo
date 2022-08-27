@@ -1,0 +1,71 @@
+#ejercicio 1 
+from random import randint
+from statistics import median
+print("ejercicio 1")
+lista1 = []
+for i in range (10):
+    lista1.append(randint(1,10))
+print(lista1)
+for i in lista1:
+    print(i, i**2, i**3)
+print()
+print("ejercicio 2")
+
+#ejercicio 2
+lista2 = []
+for i in range (5):
+    palabra = input("agregue una palabra: ")
+    lista2.append(palabra)
+print(lista2)
+lista2.reverse()
+print(lista2)
+print()
+print("ejercicio 3")
+#ejercicio 3
+
+lista3 = []
+for i in range(5):
+    nota = float(input("escribe calificacion: "))
+    while(nota<0 or nota>10):
+        print("pon otra calificacion: ")
+        nota = float(input("escribe calificacion: "))
+    lista3.append(nota)
+print(lista3)
+print(f"la media es: {median(lista3)}, la maxima es: {max(lista3)}, la minima es: {min(lista3)} ")
+print()
+print("ejercicio 4")
+
+#ejercicio 4 
+'''''
+alumnos = int(input("¿cuántos alumnos va a ingresar"))
+dict ={}
+
+for i in range (1, alumnos+1):
+    nombre = input("ingresa el nombre del alumno: ")
+    for nombre in dict:
+        dict["nombre"]
+    notas = int(input("ingresa calificaciones"))
+    lista_notas = []
+    calificacion = float (input("ingresa la calificación"))
+    if calificacion >= 0:
+        lista_notas.append(calificacion)
+        dict[nombre] = lista_notas
+    else:
+        print ("calificación incorrecta")
+print(dict)
+'''''
+
+print()
+print("ejercicio 5")
+#ejercicio 5 
+
+meses = ("inicio", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre")
+salida = False
+while not salida:
+    numero= int(input("digita un número: "))
+    if numero == 0:
+        break
+    else:
+        print(meses[numero])
+
+
