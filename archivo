@@ -1,4 +1,6 @@
 #ejercicio 1 
+#1.-Realizar un programa que inicialice una lista con 10 valores aleatorios (del 1 al 10) y posteriormente muestre en pantalla cada elemento de la lista junto con su cuadrado y su cubo.
+
 from random import randint
 from statistics import median
 print("ejercicio 1")
@@ -13,6 +15,7 @@ print()
 
 
 #ejercicio 2
+#2.Crea una lista e inicializarla con 5 cadenas de caracteres leídas por teclado. Copia los elementos de la lista en otra lista pero en orden inverso, y muestra sus elementos por la pantalla.
 print("ejercicio 2")
 lista2 = []
 for i in range (5):
@@ -24,6 +27,7 @@ print(lista2)
 print()
 
 #ejercicio 3
+#3.-Se quiere realizar un programa que lea por teclado las 5 notas obtenidas por un alumno (comprendidas entre 0 y 10). A continuación debe mostrar todas las notas, la nota media, la nota más alta que ha sacado y la menor. 
 print("ejercicio 3")
 
 lista3 = []
@@ -39,8 +43,8 @@ print()
 
 
 #ejercicio 4 
+#4.-Codifica un programa en python que nos permita guardar los nombres de los alumnos de una clase y las notas que han obtenido. Cada alumno puede tener distinta cantidad de notas. Guarda la información en un diccionario cuya claves serán los nombres de los alumnos y los valores serán listados con las notas de cada alumno. El programa pedirá el número de alumnos que vamos a introducir, pedirá su nombre e irá pidiendo sus notas hasta que introduzcamos un número negativo. Al final el programa nos mostrará la lista de alumnos y la nota media obtenida por cada uno de ellos. Nota: si se introduce el nombre de un alumno que ya existe el programa nos dará un error. 
 print("ejercicio 4")
-
 diccionario = {}
 alumnos = int(input("cuantos alumnos son: "))
 for i in range (1, alumnos + 1):
@@ -64,6 +68,7 @@ for i,j in diccionario.items():
 print()
 
 #ejercicio 5 
+#5.-Crea una tupla con los meses del año, pide números al usuario, si el número está entre 1 y la longitud máxima de la tupla, muestra el contenido de esa posición sino muestra un mensaje de error. El programa termina cuando el usuario introduce un cero.
 print("ejercicio 5")
 meses = ("inicio", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre")
 salida = False
