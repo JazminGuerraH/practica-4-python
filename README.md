@@ -1,3 +1,3 @@
-# practica-4-python
+# python praticas pilares
 practica 4 ejercicios python 
-PRACTICAS PYTHON PILARES
+
