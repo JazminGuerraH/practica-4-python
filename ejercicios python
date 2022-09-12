@@ -1,0 +1,51 @@
+
+
+#ejercicio 1
+
+from platform import java_ver
+
+
+palabra1 = input("inserte una palabra: ")
+palabra2 = input("inserte otra palbra: ")
+
+if len(palabra1)> len(palabra2):
+    print(f"\nLa cadena más larga es: {palabra1} ")
+elif len (palabra1) < len(palabra2):
+    print(f"\nLa cadena más larga es: {palabra2}")
+else:
+    print("\nLas dos palabras tienen la misma cantidad de caracteres")
+
+#ejercicio 2
+frase = input("introduzca una frase: ")
+
+if frase.endswith("."):
+    print("Termina con punto")
+else:
+    print("No termina con un punto")
+
+#ejercicio 3
+
+palindromo = input("introduzca una palabra para saber si es palindromo: ")
+palindromo = palindromo.replace(" ", "")
+palindromo2 = palindromo[::-1]
+print(f"La cadena invertida es: {palindromo2}")
+if palindromo == palindromo2:
+    print("la palabra es un palindromo")
+else:
+    print("la palabra no es un palindromo")
+
+#ejercicio 4
+
+cadena = input("Ingrese una cadena: ")
+cadena = cadena.replace(" ", "*")
+cadena = cadena.title()
+print(cadena)
+
+#ejercicio 5 
+cadenita = input("Introduzca una cadena: ")
+
+print(f"\nVocal a: {cadenita.count('a')}")
+print(f"\nVocal e: {cadenita.count('e')}")
+print(f"\nVocal i: {cadenita.count('i')}")
+print(f"\nVocal o: {cadenita.count('o')}")
+print(f"\nVocal u: {cadenita.count('u')}")
